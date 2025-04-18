@@ -1,0 +1,127 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "da203c9d-af50-4ccb-8e5e-4b18f7e3f755",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "session 6 prompt"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2e704443-80b8-481f-bce9-c04f70ddb645",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## Function for sin(x)\n",
+    "This function takes an input `x` and returns the sine of `x` using NumPy.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b105a56f-8460-41d8-bc39-7ec37dde0ca7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "def sin_func(x):\n",
+    "    return np.sin(x)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2d3c4cfc-5736-4f52-bdcc-1d2ce293a723",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## Function for cos(x)\n",
+    "This function takes an input `x` and returns the cosine of `x` using NumPy.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dbf62498-0f2a-482d-9919-bb88625d3fc4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def cos_func(x):\n",
+    "    return np.cos(x)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8b2b490b-62a0-4d8e-bdec-9de3b4f5b2bd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## Tabulate sin(x) and cos(x)\n",
+    "This cell creates 1000 values of `x` from 0 to 2 and applies the sin and cos functions to them.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5b46dc60-9ff9-4dd8-94be-c6d802d32232",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x_values = np.linspace(0, 2, 1000)\n",
+    "sin_values = sin_func(x_values)\n",
+    "cos_values = cos_func(x_values)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "533d9085-987c-4166-84df-8fa960ddf532",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "## Print first 10 values\n",
+    "This loop prints the first 10 values of `x`, `sin(x)`, and `cos(x)` in a column format.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b50533bd-7c17-4a78-9a33-108a132c41d1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(\"x        sin(x)     cos(x)\")\n",
+    "for i in range(10):\n",
+    "    print(f\"{x_values[i]:.5f}   {sin_values[i]:.5f}   {cos_values[i]:.5f}\")\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
